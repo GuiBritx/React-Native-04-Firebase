@@ -14,10 +14,11 @@ const estiloColecao = StyleSheet.create({
    },
    texto: {
       fontSize: 20,
-      color: '#FFFFFF',
+      color: '#00000',
       fontWeight: 'bold',
    },
 
 });
 
   export default estiloColecao;
+

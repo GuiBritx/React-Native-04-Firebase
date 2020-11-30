@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, Image, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 import estiloItemLista from './estiloItemLista';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -16,13 +16,18 @@ const ItemLista = ({data, detalhe}) => {
             <Text style={estiloItemLista.itemSubTitulo}> {item.autor} ({item.anoPublicacao}) </Text>
             
             <LinearGradient colors={['#92afd7', '#92afd7', '#14417b']}>
+                <Text> </Text>
+                {/*
                 <Image 
                     resizeMode='contain'
                     style={estiloItemLista.itemFoto}
                     source={item.foto}
                 />
+                */}
             </LinearGradient>
 
         </TouchableOpacity>
     );
 }
+
+export default ItemLista;
